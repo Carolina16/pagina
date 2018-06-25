@@ -1,0 +1,744 @@
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest");
+
+p {
+  font-family: "Mystery Quest", cursive;
+  font-size: 150%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.menu{
+    background-color: #01DFD7;
+    border-bottom: solid black;
+}
+body{
+    background-color: black;
+}
+div:nth-child(1) > img{
+    position:absolute;
+    margin: 0;
+    width: 190px;
+    height: 80px;
+    padding: 0px;
+}
+nav>ul{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    width: 86%;
+    height: 80px;
+    float: right;  
+}
+a{
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 43px;
+    margin-top: 20px;
+    display: inline-block;
+    font-family: "Mystery Quest", cursive;
+ 
+}
+a:hover{
+    background: #01DFD7;
+}
+
+.slider {
+    width: 100%;
+    height: 460px;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 600%;
+    animation: cambio 20s infinite alternate; 
+}
+
+.slider li {
+	width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    
+    100% {margin-left: -400%;}
+	120% {margin-left: -400%;}
+	
+	135% {margin-left: -500%;}
+    160% {margin-left: -500%;}
+
+    155% {margin-left: -600%;}
+    175% {margin-left: -600%;}
+
+}
+h1{
+    color: black;
+    text-align: center;
+    margin-top: 36px;
+    padding: 15px;
+    width: 100%;
+    height: 51px;
+    background: #01DFD7;
+    font-family: "Mystery Quest", cursive;
+}
+section{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+section article{
+    width: 205px;
+    height: 325px;
+    position: relative;
+    margin: 40px 65px;
+    display: inline-block;
+    overflow: hidden;
+}
+section article nav{
+    width: 200px;
+    height: 320px;
+    object-fit: cover;
+    margin: 0;
+    border: 2px solid white;
+
+}
+section article nav img{
+    width: 200px;
+    left: 0;
+    height: 320px;
+    object-fit: cover;
+}
+.estilo{
+    width: 201px;
+    height: 115px;
+    background: #01DFD7;
+}
+.estilo h3{
+    color: black;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Mystery Quest", cursive;
+
+}
+.estilo .boton{
+    width: 32px;
+    height: 15px;
+    color: black;
+    background: #01DFD7;
+    margin: 15px 75px;
+    padding: 10px;
+    font-size: 18px;
+    display: inline-block;
+    border: white solid 2px;
+}
+section article div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(219px);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: .5s; 
+}
+section article:hover div{
+    transform: translateY(102px);
+    opacity: 1;
+}
+.ac{
+    width: 100%;
+    height: 100%;
+}
+.ac nav{
+    width: 250px;
+    height: 370px;
+    position: relative;
+    margin: 40px;
+    display: inline-block;
+    border: 2px solid white;
+    overflow: hidden;
+}
+.ac nav img{
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.ac nav .action{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 370px; 
+    background-color: aqua;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.ac nav:hover .action{
+    transform: scale(1);
+}
+.ac nav .action h2{
+    font-size: 20px;
+    margin: 5px;
+    color: black;
+    transform: translate(20px,-20px) ;
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.ac nav:hover .action h2{
+    transform: translate(18px,15px);
+    opacity: 1;
+}
+.ac nav .action p{
+    text-align: justify;
+    padding: 25px;
+    color: black;
+    font-size: 20px;
+    transform: translateX(-100px);
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.ac nav:hover .action p{
+    opacity: 1;
+    transform: translateX(0);
+}
+.ac nav .action .boton1{
+    width: 70px;
+    height: 20px;
+    margin: 0px 70px;
+    color: black;
+    border: 1px solid black;
+    background: yellow;
+    font-size: 15px;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-delay: 1.5s;
+    transition-property: opacity;
+}
+.ac nav:hover .action .boton1{
+    opacity: 1;
+}
+.co{
+    width: 100%;
+    height: 100%;
+}
+.co nav{
+    width: 250px;
+    height: 370px;
+    position: relative;
+    margin: 40px;
+    display: inline-block;
+    border: 2px solid white;
+    overflow: hidden;
+}
+.co nav img{
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+}
+.co nav .comedy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 370px; 
+    background-color:aqua;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.co nav:hover .comedy{
+    transform: scale(1);
+}
+.co nav .comedy h2{
+    font-size: 20px;
+    margin: 5px;
+    color: black;
+    transform: translate(20px,-20px) ;
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.co nav:hover .comedy h2{
+    transform: translate(50px,15px);
+    opacity: 1;
+}
+.co nav .comedy p{
+    text-align: justify;
+    padding: 25px;
+    color: black;
+    font-size: 20px;
+    transform: translateX(-100px);
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.co nav:hover .comedy p{
+    opacity: 1;
+    transform: translateX(0);
+}
+.co nav .comedy .boton2{
+    width: 70px;
+    height: 20px;
+    margin: 0px 70px;
+    color: black;
+    border: 1px solid black;
+    background: yellow;
+    font-size: 15px;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-delay: 1.5s;
+    transition-property: opacity;
+}
+.co nav:hover .comedy .boton2{
+    opacity: 1;
+}
+.fi{
+    width: 100%;
+    height: 100%;
+}
+.fi nav{
+    width: 250px;
+    height: 370px;
+    position: relative;
+    margin: 40px;
+    border: 2px solid white;
+    display: inline-block;
+    overflow: hidden;
+}
+.fi nav img{
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+}
+.fi nav .fiction{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 370px; 
+    background-color:aqua;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.fi nav:hover .fiction{
+    transform: scale(1);
+}
+.fi nav .fiction h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    transform: translate(20px,-20px) ;
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.fi nav:hover .fiction h2{
+    transform: translate(2px,15px);
+    opacity: 1;
+}
+.fi nav .fiction p{
+    text-align: justify;
+    padding: 25px;
+    color: black;
+    font-size: 20px;
+    transform: translateX(-100px);
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.fi nav:hover .fiction p{
+    opacity: 1;
+    transform: translateX(0);
+}
+.fi nav .fiction .boton3{
+    width: 70px;
+    height: 20px;
+    margin: 0px 70px;
+    color: black;
+    border: 1px solid black;
+    background: yellow;
+    font-size: 15px;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-delay: 1.5s;
+    transition-property: opacity;
+}
+.fi nav:hover .fiction .boton3{
+    opacity: 1;
+}
+.in{
+    width: 100%;
+    height: 100%;
+}
+.in nav{
+    width: 250px;
+    height: 370px;
+    position: relative;
+    margin: 40px;
+    border: 2px solid white;
+    display: inline-block;
+    overflow: hidden;
+}
+.in nav img{
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+}
+.in nav .child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 370px; 
+    background-color:aqua;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.in nav:hover .child{
+    transform: scale(1);
+}
+.in nav .child h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    transform: translate(20px,-20px) ;
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.in nav:hover .child h2{
+    transform: translate(2px,15px);
+    opacity: 1;
+}
+.in nav .child p{
+    text-align: justify;
+    padding: 25px;
+    color: black;
+    font-size: 20px;
+    transform: translateX(-100px);
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.in nav:hover .child p{
+    opacity: 1;
+    transform: translateX(0);
+}
+.in nav .child .boton4{
+    width: 70px;
+    height: 20px;
+    margin: 0px 70px;
+    color: black;
+    border: 1px solid black;
+    background: yellow;
+    font-size: 15px;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-delay: 1.5s;
+    transition-property: opacity;
+}
+.in nav:hover .child .boton4{
+    opacity: 1;
+}
+.ro{
+    width: 100%;
+    height: 100%;
+}
+.ro nav{
+    width: 250px;
+    height: 370px;
+    position: relative;
+    margin: 40px;
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid white;
+}
+.ro nav img{
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+}
+.ro nav .romance{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 370px; 
+    background-color:aqua;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.ro nav:hover .romance{
+    transform: scale(1);
+}
+.ro nav .romance h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    transform: translate(20px,-20px) ;
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.ro nav:hover .romance h2{
+    transform: translate(2px,15px);
+    opacity: 1;
+}
+.ro nav .romance p{
+    text-align: justify;
+    padding: 25px;
+    color: black;
+    font-size: 20px;
+    transform: translateX(-100px);
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.ro nav:hover .romance p{
+    opacity: 1;
+    transform: translateX(0);
+}
+.ro nav .romance .boton5{
+    width: 70px;
+    height: 20px;
+    margin: 0px 70px;
+    color: black;
+    border: 1px solid black;
+    background: yellow;
+    font-size: 15px;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-delay: 1.5s;
+    transition-property: opacity;
+}
+.ro nav:hover .romance .boton5{
+    opacity: 1;
+}
+.te{
+    width: 100%;
+    height: 100%;
+}
+.te nav{
+    width: 250px;
+    height: 370px;
+    position: relative;
+    margin: 40px;
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid white;
+}
+.te nav img{
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+}
+.te nav .terror{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 370px; 
+    background-color:aqua;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.te nav:hover .terror{
+    transform: scale(1);
+}
+.te nav .terror h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    transform: translate(20px,-20px) ;
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.te nav:hover .terror h2{
+    transform: translate(2px,15px);
+    opacity: 1;
+}
+.te nav .terror p{
+    text-align: justify;
+    padding: 25px;
+    color: black;
+    font-size: 20px;
+    transform: translateX(-100px);
+    transition-duration: .3s;
+    transition-delay: 1.5s;
+    transition-property:  transform, opacity;
+    opacity: 0;
+}
+.te nav:hover .terror p{
+    opacity: 1;
+    transform: translateX(0);
+}
+.te nav .terror .boton6{
+    width: 70px;
+    height: 20px;
+    margin: 0px 70px;
+    color: black;
+    border: 1px solid black;
+    background: yellow;
+    font-size: 15px;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-delay: 1.5s;
+    transition-property: opacity;
+}
+.te nav:hover .terror .boton6{
+    opacity: 1;
+}
+.posterpagina img{
+    margin-top: 30px;
+    width: 100%;
+    height: 525px;
+    object-fit: cover;
+}
+main h1{
+    color: white;
+}
+main h2{
+    color: white;
+    margin: 10px 45px;
+    font-size: 22px;
+    font-family: 'Rancho', cursive;
+}
+main h4{
+    color: white;
+    margin: 40px 45px 0px 45px;
+    font-size: 20px;
+    font-family: 'Rancho', cursive;
+}
+main video{
+    margin: 20px 45px 0px;
+    border: 2px solid white;
+}
+main p{
+    color: white;
+    font-size: 20px;
+    margin: 20px 95px 0px 48px;
+    text-align: justify;
+    font-family: 'Rancho', cursive;
+}
+
+footer{
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: #01DFD7;
+}
+footer img:nth-child(1){
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 545px;
+    object-fit: cover;
+}
+footer img:nth-child(2){
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 630px;
+    object-fit: cover;
+}
+footer img:nth-child(3){
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right:630px;
+    object-fit: cover;
+}
+footer img:nth-child(4){
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 545px;
+    object-fit: cover;
+}
+footer h5{
+    position: relative;
+    top: 130px;
+    left: auto;
+    right: auto;
+    text-align: center;
+    font-family: "Mystery Quest", cursive;
+}
